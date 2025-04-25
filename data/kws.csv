@@ -1,0 +1,2170 @@
+id,kw
+0,united states
+1,usa
+2,america
+3,thirteen colonies
+4,confederate states
+5,union states
+6,reconstruction era
+7,jim crow
+8,civil rights movement
+9,indian territory
+10,alaska native claims
+11,hawaii kingdom
+12,mexican cession
+13,canada
+14,british north america
+15,upper canada
+16,lower canada
+17,northwest territories
+18,nunavut
+19,first nations
+20,métis
+21,inuit
+22,residential schools
+23,sixties scoop
+24,mexico
+25,new spain
+26,mexican empire
+27,porfiriato
+28,ejido system
+29,hacienda system
+30,mexican revolution
+31,cuba
+32,spanish cuba
+33,american occupation
+34,dominican republic
+35,santo domingo
+36,española
+37,haiti
+38,saint-domingue
+39,haitian revolution
+40,jamaica
+41,british jamaica
+42,spanish jamaica
+43,maroon communities
+44,accompong
+45,moore town
+46,trinidad and tobago
+47,british trinidad
+48,spanish trinidad
+49,barbados
+50,british barbados
+51,little england
+52,bahamas
+53,british bahamas
+54,lucayan archipelago
+55,antigua and barbuda
+56,british leeward islands
+57,dominica
+58,french dominica
+59,british dominica
+60,grenada
+61,french grenada
+62,british grenada
+63,saint lucia
+64,french saint lucia
+65,british saint lucia
+66,saint vincent
+67,grenadines
+68,british windward islands
+69,saint kitts and nevis
+70,federation
+71,anguilla
+72,belize
+73,british honduras
+74,maya civilization
+75,costa rica
+76,spanish costa rica
+77,united provinces
+78,el salvador
+79,cuzcatlán
+80,federal republic
+81,guatemala
+82,captaincy general
+83,mayan states
+84,honduras
+85,spanish honduras
+86,banana republics
+87,nicaragua
+88,mosquito coast
+89,central american federation
+90,panama
+91,gran colombia
+92,panama canal zone
+93,argentina
+94,viceroyalty of río de la plata
+95,pampas
+96,patagonia
+97,tierra del fuego
+98,conquest of the desert
+99,bolivia
+100,upper peru
+101,potosí
+102,silver mining
+103,brazil
+104,portuguese brazil
+105,empire of brazil
+106,quilombos
+107,palmares
+108,rubber boom
+109,chile
+110,captaincy general
+111,mapuche territory
+112,wallmapu
+113,araucanía
+114,pacification
+115,colombia
+116,new granada
+117,gran colombia
+118,palenques
+119,san basilio
+120,pacific coast
+121,ecuador
+122,kingdom of quito
+123,royal audience
+124,peru
+125,inca empire
+126,viceroyalty of peru
+127,tahuantinsuyu
+128,spanish peru
+129,guano era
+130,paraguay
+131,jesuit reductions
+132,guarani missions
+133,uruguay
+134,banda oriental
+135,cisplatine province
+136,venezuela
+137,captaincy general
+138,great colombia
+139,guyana
+140,british guiana
+141,dutch guiana
+142,suriname
+143,dutch guiana
+144,maroon societies
+145,french guiana
+146,cayenne
+147,penal colony
+148,first nations
+149,métis
+150,inuit
+151,alaska natives
+152,american indians
+153,native americans
+154,indigenous peoples
+155,navajo nation
+156,diné
+157,cherokee nation
+158,lakota
+159,dakota
+160,nakota
+161,sioux
+162,apache
+163,comanche
+164,iroquois confederacy
+165,haudenosaunee
+166,mohawk
+167,oneida
+168,onondaga
+169,cayuga
+170,seneca
+171,tuscarora
+172,maya peoples
+173,k'iche'
+174,q'eqchi'
+175,kaqchikel
+176,aztec
+177,mexica
+178,nahua peoples
+179,toltec
+180,zapotec
+181,mixtec
+182,tarascan state
+183,inca
+184,quechua
+185,aymara
+186,guarani
+187,mapuche
+188,tehuelche
+189,selk'nam
+190,atacameño
+191,taíno
+192,arawak
+193,carib
+194,garifuna
+195,kalina
+196,lokono
+197,warao
+198,yanomami
+199,trail of tears
+200,indian removal
+201,forced relocation
+202,wounded knee massacre
+203,sand creek massacre
+204,residential schools
+205,boarding schools
+206,sixties scoop
+207,conquest of the desert
+208,pacification of araucanía
+209,rubber boom atrocities
+210,putumayo atrocities
+211,slavery
+212,transatlantic slave trade
+213,middle passage
+214,plantation system
+215,slave codes
+216,slave patrols
+217,haitian revolution
+218,maroon wars
+219,quilombo wars
+220,caste war of yucatán
+221,caste war of chan santa cruz
+222,slavery reparations
+223,indigenous reparations
+224,land restitution
+225,treaty rights
+226,land claims
+227,tribal sovereignty
+228,self-determination
+229,h.r. 40
+230,commission to study reparation proposals
+231,rosewood reparations
+232,tulsa race massacre reparations
+233,truth and reconciliation commission
+234,residential schools settlement
+235,sixties scoop settlement
+236,day scholars settlement
+237,caricom reparations commission
+238,reparatory justice
+239,ten point plan
+240,caribbean reparations
+241,quilombo land rights
+242,collective land titles
+243,indigenous land demarcation
+244,ancestral territories
+245,treaties
+246,indian treaties
+247,numbered treaties
+248,peace and friendship treaties
+249,robinson treaties
+250,douglas treaties
+251,williams treaties
+252,indian claims commission
+253,specific claims
+254,comprehensive claims
+255,land claims agreements
+256,modern treaties
+257,self-government agreements
+258,aboriginal title
+259,indigenous title
+260,native title
+261,tribal sovereignty
+262,reserved rights
+263,usufruct rights
+264,inter-american court
+265,human rights court
+266,oas
+267,organization of american states
+268,national coalition of blacks for reparations in america
+269,n'cobra
+270,national african american reparations commission
+271,assembly of first nations
+272,congress of aboriginal peoples
+273,inuit tapiriit kanatami
+274,métis national council
+275,american indian movement
+276,idle no more
+277,zapatista movement
+278,ejército zapatista
+279,black lives matter
+280,movement for black lives
+281,reparations movement
+282,land back movement
+283,environmental justice
+284,climate reparations
+285,resource extraction
+286,mining rights
+287,water rights
+288,cultural repatriation
+289,artifact return
+290,sacred objects
+291,ancestral remains
+292,museum restitution
+293,nagpra
+294,language revitalization
+295,cultural preservation
+296,traditional knowledge
+297,indigenous education
+298,slave economy
+299,plantation economy
+300,extractive economy
+301,dependency theory
+302,neocolonialism
+303,structural adjustment
+304,tribal gaming
+305,resource revenue sharing
+306,impact benefit agreements
+307,modern treaties
+308,haiti independence debt
+309,guano bonds
+310,external debt
+311,odious debt
+312,sovereign debt
+313,oral history
+314,oral tradition
+315,storytelling
+316,traditional knowledge
+317,indigenous knowledge
+318,cultural memory
+319,collective memory
+320,slave narratives
+321,wpa slave narratives
+322,underground railroad
+323,freedom narratives
+324,truth commissions
+325,historical commissions
+326,memory projects
+327,documentation centers
+328,memorial sites
+329,museumsfrance
+330,french republic
+331,vichy france
+332,free france
+333,french empire
+334,french colonial empire
+335,french west africa
+336,french equatorial africa
+337,french indochina
+338,french algeria
+339,french protectorate
+340,germany
+341,german reich
+342,weimar republic
+343,nazi germany
+344,third reich
+345,federal republic
+346,german democratic republic
+347,prussia
+348,german empire
+349,german colonial empire
+350,german east africa
+351,german south west africa
+352,german new guinea
+353,united kingdom
+354,great britain
+355,british empire
+356,commonwealth
+357,england
+358,scotland
+359,wales
+360,northern ireland
+361,british raj
+362,british west indies
+363,british africa
+364,british mandate
+365,british protectorate
+366,netherlands
+367,dutch republic
+368,dutch east indies
+369,dutch west indies
+370,dutch gold coast
+371,dutch empire
+372,kingdom of netherlands
+373,benelux
+374,belgium
+375,belgian congo
+376,belgian empire
+377,congo free state
+378,ruanda-urundi
+379,kingdom of belgium
+380,flemish region
+381,walloon region
+382,denmark
+383,danish empire
+384,danish west indies
+385,greenland
+386,faroe islands
+387,danish colonial empire
+388,norway
+389,kingdom of norway
+390,norwegian empire
+391,union with sweden
+392,german occupation
+393,sweden
+394,swedish empire
+395,great power era
+396,swedish colonial empire
+397,new sweden
+398,finland
+399,grand duchy of finland
+400,finnish civil war
+401,winter war
+402,continuation war
+403,lapland war
+404,spain
+405,spanish empire
+406,spanish colonial empire
+407,spanish east indies
+408,spanish west indies
+409,spanish africa
+410,francoist spain
+411,second republic
+412,portugal
+413,portuguese empire
+414,portuguese colonial empire
+415,portuguese india
+416,portuguese africa
+417,portuguese timor
+418,estado novo
+419,carnation revolution
+420,italy
+421,italian empire
+422,italian colonial empire
+423,italian east africa
+424,italian libya
+425,italian somalia
+426,fascist italy
+427,kingdom of italy
+428,greece
+429,hellenic republic
+430,kingdom of greece
+431,ottoman greece
+432,axis occupation
+433,greek civil war
+434,poland
+435,polish-lithuanian commonwealth
+436,partitioned poland
+437,second polish republic
+438,general government
+439,people's republic
+440,russia
+441,russian empire
+442,soviet union
+443,ussr
+444,russian federation
+445,russian sphere of influence
+446,ukraine
+447,ukrainian ssr
+448,ukrainian people's republic
+449,holodomor
+450,soviet occupation
+451,german occupation
+452,belarus
+453,byelorussian ssr
+454,belarusian people's republic
+455,soviet occupation
+456,german occupation
+457,austria
+458,austro-hungarian empire
+459,habsburg monarchy
+460,first republic
+461,federal state
+462,german austria
+463,hungary
+464,kingdom of hungary
+465,austria-hungary
+466,hungarian soviet republic
+467,people's republic
+468,czechoslovakia
+469,czech republic
+470,slovakia
+471,first republic
+472,protectorate
+473,federal republic
+474,yugoslavia
+475,kingdom of yugoslavia
+476,socialist yugoslavia
+477,serbia
+478,croatia
+479,slovenia
+480,bosnia
+481,montenegro
+482,macedonia
+483,kosovo
+484,holocaust
+485,shoah
+486,final solution
+487,concentration camps
+488,death camps
+489,forced labor camps
+490,ghettos
+491,nuremberg trials
+492,denazification
+493,aryanization
+494,armenian genocide
+495,greek genocide
+496,assyrian genocide
+497,pontic genocide
+498,great catastrophe
+499,death marches
+500,porajmos
+501,roma genocide
+502,sinti persecution
+503,romani holocaust
+504,gypsy persecution
+505,holodomor
+506,ukrainian famine
+507,soviet famines
+508,dekulakization
+509,collectivization
+510,colonial atrocities
+511,congo free state
+512,herero genocide
+513,maji maji rebellion
+514,italian libya
+515,french algeria
+516,balkan wars
+517,yugoslav wars
+518,bosnian war
+519,croatian war
+520,kosovo war
+521,ethnic cleansing
+522,world war i
+523,wwi
+524,great war
+525,versailles treaty
+526,war reparations
+527,war debt
+528,occupation costs
+529,world war ii
+530,wwii
+531,second world war
+532,axis occupation
+533,collaboration
+534,resistance
+535,forced labor
+536,slave labor
+537,war crimes
+538,wiedergutmachung
+539,restitution
+540,compensation
+541,indemnification
+542,luxembourg agreements
+543,claims conference
+544,article 2 fund
+545,colonial reparations
+546,slavery reparations
+547,indigenous reparations
+548,cultural restitution
+549,art restitution
+550,land restitution
+551,war reparations
+552,occupation reparations
+553,forced labor compensation
+554,victim compensation
+555,property restitution
+556,bank accounts
+557,washington agreement
+558,london debt agreement
+559,2+4 treaty
+560,peace treaties
+561,bilateral agreements
+562,class action
+563,collective claims
+564,individual claims
+565,property claims
+566,insurance claims
+567,bank claims
+568,statute of limitations
+569,legal barriers
+570,sovereign immunity
+571,state responsibility
+572,universal jurisdiction
+573,claims conference
+574,jewish claims conference
+575,world jewish congress
+576,world jewish restitution organization
+577,european union
+578,council of europe
+579,european court
+580,united nations
+581,international court of justice
+582,restitution committees
+583,compensation funds
+584,reconciliation foundations
+585,memorial foundations
+586,nazi-looted art
+587,degenerate art
+588,art restitution
+589,cultural property
+590,museum collections
+591,provenance research
+592,washington principles
+593,colonial artifacts
+594,benin bronzes
+595,museum returns
+596,cultural heritage
+597,indigenous artifacts
+598,historical memory
+599,memory politics
+600,commemoration
+601,memorial sites
+602,documentation centers
+603,truth commissions
+604,reconciliation commissions
+605,historical commissions
+606,expert commissions
+607,transitional justice
+608,historical justice
+609,restorative justice
+610,victim recognition
+611,marshall plan
+612,economic reconstruction
+613,development aid
+614,technical assistance
+615,bilateral cooperation
+616,frozen assets
+617,blocked accounts
+618,dormant accounts
+619,unclaimed property
+620,heirless property
+621,forced migration
+622,population transfer
+623,ethnic cleansing
+624,refugee compensation
+625,displaced persons
+626,slave labor
+627,forced labor
+628,conscript labor
+629,labor battalions
+630,prisoner labor
+631,property seizure
+632,aryanization
+633,nationalization
+634,expropriation
+635,confiscation
+636,holocaust survivors
+637,second generation
+638,third generation
+639,survivor organizations
+640,roma and sinti
+641,slavic peoples
+642,jews
+643,political prisoners
+644,resistance members
+645,colonial subjects
+646,indigenous peoples
+647,enslaved peoples
+648,forced laborers
+649,oral history
+650,survivor testimony
+651,witness accounts
+652,historical documentation
+653,archives
+654,memorial sites
+655,museums
+656,documentation centers
+657,restitution movement
+658,reparations movement
+659,decolonization movement
+660,memory activism
+661,historical justice movementegypt
+662,ancient egypt
+663,ptolemaic egypt
+664,roman egypt
+665,fatimid caliphate
+666,mamluk sultanate
+667,ottoman egypt
+668,muhammad ali dynasty
+669,british egypt
+670,arab republic of egypt
+671,united arab republic
+672,libya
+673,ottoman libya
+674,italian libya
+675,cyrenaica
+676,tripolitania
+677,fezzan
+678,kingdom of libya
+679,jamahiriya
+680,great socialist people's libyan arab jamahiriya
+681,tunisia
+682,carthage
+683,ottoman tunisia
+684,french protectorate
+685,husainid dynasty
+686,republic of tunisia
+687,habib bourguiba
+688,ben ali regime
+689,algeria
+690,french algeria
+691,ottoman algeria
+692,regency of algiers
+693,national liberation front
+694,war of independence
+695,pied-noirs
+696,morocco
+697,alaouite dynasty
+698,french protectorate
+699,spanish protectorate
+700,kingdom of morocco
+701,western sahara
+702,spanish sahara
+703,rio de oro
+704,mali
+705,mali empire
+706,french sudan
+707,french soudan
+708,mande empire
+709,songhai empire
+710,wassoulou empire
+711,bambara empire
+712,toucouleur empire
+713,french west africa
+714,afrique occidentale française
+715,nigeria
+716,british nigeria
+717,northern nigeria protectorate
+718,southern nigeria protectorate
+719,colony and protectorate of nigeria
+720,biafra
+721,sokoto caliphate
+722,benin empire
+723,oyo empire
+724,bornu empire
+725,ghana
+726,gold coast
+727,british gold coast
+728,ashanti empire
+729,asante kingdom
+730,fante confederacy
+731,nzema kingdom
+732,ga-dangme states
+733,senegal
+734,french senegal
+735,four communes
+736,wolof empire
+737,jolof empire
+738,waalo kingdom
+739,cayor kingdom
+740,baol kingdom
+741,ivory coast
+742,cote d'ivoire
+743,french ivory coast
+744,kong empire
+745,gyaaman
+746,indenie kingdom
+747,sanwi kingdom
+748,burkina faso
+749,upper volta
+750,haute volta
+751,mossi kingdoms
+752,french upper volta
+753,thomas sankara regime
+754,guinea
+755,french guinea
+756,wassoulou empire
+757,futa jallon
+758,kaabu empire
+759,nalu kingdom
+760,landuma kingdom
+761,sierra leone
+762,british sierra leone
+763,sierra leone colony
+764,sierra leone protectorate
+765,temne kingdom
+766,mende kingdom
+767,liberia
+768,american colonization society
+769,commonwealth of liberia
+770,americo-liberians
+771,indigenous peoples
+772,doe regime
+773,taylor regime
+774,ethiopia
+775,abyssinia
+776,italian east africa
+777,british occupation
+778,derg regime
+779,zemene mesafint
+780,solomonic dynasty
+781,italian invasion
+782,somalia
+783,british somaliland
+784,italian somaliland
+785,french somaliland
+786,trust territory
+787,ajuran sultanate
+788,adal sultanate
+789,warsangali sultanate
+790,majeerteen sultanate
+791,hobyo sultanate
+792,dervish state
+793,kenya
+794,british east africa
+795,east africa protectorate
+796,kenya colony
+797,mau mau uprising
+798,kikuyu central association
+799,uganda
+800,buganda kingdom
+801,bunyoro kingdom
+802,toro kingdom
+803,ankole kingdom
+804,british uganda
+805,busoga kingdom
+806,tanzania
+807,tanganyika
+808,zanzibar
+809,german east africa
+810,british tanganyika
+811,maji maji rebellion
+812,nyamwezi kingdom
+813,democratic republic of the congo
+814,belgian congo
+815,congo free state
+816,zaire
+817,katanga
+818,south kasai
+819,kongo kingdom
+820,luba empire
+821,lunda empire
+822,yeke kingdom
+823,angola
+824,portuguese angola
+825,portuguese west africa
+826,kongo kingdom
+827,ndongo kingdom
+828,matamba kingdom
+829,mpla
+830,unita
+831,civil war
+832,luena memorandum
+833,cameroon
+834,german kamerun
+835,french cameroun
+836,british cameroons
+837,bamum kingdom
+838,bamileke kingdoms
+839,fulbe kingdom
+840,chad
+841,french chad
+842,bornu empire
+843,wadai empire
+844,bagirmi kingdom
+845,ennedi kingdom
+846,tibesti kingdom
+847,south africa
+848,union of south africa
+849,cape colony
+850,natal colony
+851,orange free state
+852,transvaal republic
+853,boer republics
+854,apartheid
+855,bantustans
+856,homelands
+857,zimbabwe
+858,southern rhodesia
+859,rhodesia
+860,british south africa company
+861,great zimbabwe
+862,mutapa empire
+863,rozwi empire
+864,ndebele kingdom
+865,mozambique
+866,portuguese east africa
+867,portuguese mozambique
+868,gaza empire
+869,maravi confederation
+870,frelimo
+871,renamo
+872,namibia
+873,german south west africa
+874,south west africa
+875,mandate territory
+876,swapo
+877,herero
+878,nama
+879,british empire
+880,french empire
+881,portuguese empire
+882,belgian empire
+883,german empire
+884,italian empire
+885,spanish empire
+886,colonial administration
+887,indirect rule
+888,direct rule
+889,settler colonialism
+890,colonial borders
+891,berlin conference
+892,herero and nama genocide
+893,maji maji rebellion
+894,mau mau uprising
+895,algerian war
+896,congo free state atrocities
+897,apartheid crimes
+898,gukurahundi
+899,rwandan genocide
+900,burundi genocide
+901,darfur genocide
+902,biafran war
+903,first congo war
+904,second congo war
+905,transatlantic slave trade
+906,arab slave trade
+907,east african slave trade
+908,internal african slave trade
+909,slave coast
+910,slave ports
+911,slave markets
+912,slave routes
+913,middle passage
+914,slave castles
+915,door of no return
+916,gorée island
+917,elmina castle
+918,cape coast castle
+919,christiansborg castle
+920,african nationalism
+921,pan-africanism
+922,uhuru movement
+923,independence movements
+924,decolonization
+925,liberation struggles
+926,armed struggle
+927,guerrilla warfare
+928,national liberation
+929,colonial reparations
+930,slavery reparations
+931,genocide reparations
+932,apartheid reparations
+933,war crime reparations
+934,atrocity reparations
+935,land restitution
+936,asset return
+937,cultural property return
+938,art repatriation
+939,human remains repatriation
+940,truth commission
+941,reconciliation commission
+942,truth and reconciliation
+943,transitional justice
+944,historical justice
+945,restorative justice
+946,memorial commission
+947,historical memory
+948,collective memory
+949,class action
+950,group claims
+951,collective reparations
+952,individual reparations
+953,symbolic reparations
+954,material reparations
+955,compensation
+956,restitution
+957,rehabilitation
+958,satisfaction
+959,guarantees of non-repetition
+960,african union
+961,organization of african unity
+962,economic community of west african states
+963,ecowas
+964,southern african development community
+965,sadc
+966,east african community
+967,eac
+968,intergovernmental authority on development
+969,igad
+970,arab maghreb union
+971,amu
+972,land reform
+973,redistribution
+974,economic justice
+975,resource nationalism
+976,sovereign wealth
+977,development rights
+978,environmental justice
+979,climate reparations
+980,ecological debt
+981,cultural heritage
+982,traditional knowledge
+983,indigenous rights
+984,customary law
+985,traditional authorities
+986,community rights
+987,ancestral lands
+988,sacred sites
+989,burial grounds
+990,colonial debt
+991,odious debt
+992,structural adjustment
+993,economic exploitation
+994,resource extraction
+995,mineral rights
+996,land grabbing
+997,agricultural colonialism
+998,labor exploitation
+999,scramble for africa
+1000,partition of africa
+1001,spheres of influence
+1002,protectorates
+1003,mandates
+1004,trust territories
+1005,colonial charters
+1006,royal charters
+1007,concession companies
+1008,black lives matter
+1009,rhodes must fall
+1010,fees must fall
+1011,anti-colonial movement
+1012,decolonial movement
+1013,land back movement
+1014,restitution movement
+1015,reparations movement
+1016,mau mau compensation
+1017,herero reparations case
+1018,apartheid litigation
+1019,khulumani support group
+1020,bristol slavery reparations
+1021,caribbean reparations claims
+1022,benin bronzes restitution
+1023,ethiopia treasures return
+1024,un declaration
+1025,african charter
+1026,human rights law
+1027,international criminal law
+1028,humanitarian law
+1029,universal jurisdiction
+1030,state responsibility
+1031,oral history
+1032,living memory
+1033,survivor testimony
+1034,historical documentation
+1035,archives
+1036,memory projects
+1037,memorial sites
+1038,museums
+1039,heritage siteschina
+1040,chinese
+1041,republic of china
+1042,people's republic of china
+1043,manchuria
+1044,manchukuo
+1045,qing dynasty
+1046,ming dynasty
+1047,yuan dynasty
+1048,tang dynasty
+1049,han dynasty
+1050,warlord period
+1051,beiyang government
+1052,nationalist china
+1053,kuomintang
+1054,kmt
+1055,tibet
+1056,xinjiang
+1057,inner mongolia
+1058,outer mongolia
+1059,guangxi
+1060,ningxia
+1061,japan
+1062,japanese
+1063,imperial japan
+1064,state of japan
+1065,empire of japan
+1066,meiji
+1067,taisho
+1068,showa
+1069,heisei
+1070,reiwa
+1071,bakufu
+1072,tokugawa
+1073,shogunate
+1074,daimyo
+1075,ryukyu kingdom
+1076,okinawa
+1077,bonin islands
+1078,kuril islands
+1079,korea
+1080,north korea
+1081,south korea
+1082,dprk
+1083,rok
+1084,joseon
+1085,chosen
+1086,goryeo
+1087,silla
+1088,baekje
+1089,goguryeo
+1090,three kingdoms
+1091,korean empire
+1092,great han empire
+1093,provisional government
+1094,taiwan
+1095,formosa
+1096,chinese taipei
+1097,republic of taiwan
+1098,japanese taiwan
+1099,dutch formosa
+1100,spanish formosa
+1101,hong kong
+1102,british hong kong
+1103,new territories
+1104,kowloon
+1105,macau
+1106,portuguese macau
+1107,aomen
+1108,mongolia
+1109,inner mongolia
+1110,outer mongolia
+1111,mongolian people's republic
+1112,dzungar empire
+1113,bogd khanate
+1114,yuan dynasty
+1115,vietnam
+1116,north vietnam
+1117,south vietnam
+1118,democratic republic of vietnam
+1119,republic of vietnam
+1120,french indochina
+1121,tonkin
+1122,annam
+1123,cochinchina
+1124,dai viet
+1125,dai nam
+1126,nguyen dynasty
+1127,tay son dynasty
+1128,champa
+1129,dai co viet
+1130,cambodia
+1131,kampuchea
+1132,khmer republic
+1133,democratic kampuchea
+1134,french protectorate
+1135,khmer empire
+1136,angkor empire
+1137,funan
+1138,chenla
+1139,laos
+1140,lan xang
+1141,french laos
+1142,kingdom of laos
+1143,pathet lao
+1144,luang prabang
+1145,vientiane
+1146,champasak
+1147,thailand
+1148,siam
+1149,sukhothai
+1150,ayutthaya
+1151,thonburi
+1152,rattanakosin
+1153,lan na
+1154,pattani
+1155,monthon
+1156,myanmar
+1157,burma
+1158,british burma
+1159,union of burma
+1160,socialist burma
+1161,konbaung dynasty
+1162,toungoo dynasty
+1163,pagan kingdom
+1164,ava kingdom
+1165,arakan
+1166,rakhine
+1167,shan states
+1168,karenni states
+1169,malaysia
+1170,malaya
+1171,british malaya
+1172,straits settlements
+1173,federated malay states
+1174,unfederated malay states
+1175,north borneo
+1176,sarawak
+1177,malacca sultanate
+1178,johor sultanate
+1179,kedah sultanate
+1180,singapore
+1181,syonan-to
+1182,temasek
+1183,british singapore
+1184,indonesia
+1185,dutch east indies
+1186,netherlands east indies
+1187,netherlands india
+1188,majapahit
+1189,srivijaya
+1190,mataram sultanate
+1191,aceh sultanate
+1192,dutch colony
+1193,voc
+1194,portuguese east indies
+1195,british east indies
+1196,philippines
+1197,spanish east indies
+1198,commonwealth of the philippines
+1199,american philippines
+1200,japanese philippines
+1201,las islas filipinas
+1202,pre-colonial barangay
+1203,sultanate of sulu
+1204,sultanate of maguindanao
+1205,brunei
+1206,brunei darussalam
+1207,british protectorate brunei
+1208,timor-leste
+1209,east timor
+1210,portuguese timor
+1211,indonesian east timor
+1212,india
+1213,british india
+1214,british raj
+1215,east india company
+1216,mughal empire
+1217,maratha empire
+1218,vijayanagara empire
+1219,maurya empire
+1220,gupta empire
+1221,delhi sultanate
+1222,princely states
+1223,french india
+1224,portuguese india
+1225,bengal presidency
+1226,madras presidency
+1227,bombay presidency
+1228,pakistan
+1229,east pakistan
+1230,west pakistan
+1231,dominion of pakistan
+1232,bengal partition
+1233,partition of india
+1234,radcliffe line
+1235,bangladesh
+1236,east bengal
+1237,bengal presidency
+1238,bengal sultanate
+1239,sri lanka
+1240,ceylon
+1241,british ceylon
+1242,dutch ceylon
+1243,portuguese ceylon
+1244,kingdom of kandy
+1245,jaffna kingdom
+1246,anuradhapura
+1247,polonnaruwa
+1248,nepal
+1249,kingdom of nepal
+1250,shah dynasty
+1251,rana dynasty
+1252,bhutan
+1253,druk yul
+1254,british bhutan
+1255,sikkim
+1256,british sikkim
+1257,maldives
+1258,british maldives
+1259,sultanate of maldives
+1260,portuguese maldives
+1261,kazakhstan
+1262,kazakh ssr
+1263,kazakh khanate
+1264,alash autonomy
+1265,uzbekistan
+1266,uzbek ssr
+1267,khanate of khiva
+1268,khanate of kokand
+1269,turkmenistan
+1270,turkmen ssr
+1271,transcaspia
+1272,kyrgyzstan
+1273,kirghiz ssr
+1274,kyrgyz khanate
+1275,tajikistan
+1276,tajik ssr
+1277,emirate of bukhara
+1278,soviet central asia
+1279,turkestan
+1280,russian turkestan
+1281,transoxiana
+1282,sogdiana
+1283,bactria
+1284,margiana
+1285,afghanistan
+1286,durrani empire
+1287,hotaki dynasty
+1288,ghaznavid empire
+1289,ghurids
+1290,timurid empire
+1291,afghan emirate
+1292,afghan kingdom
+1293,iran
+1294,persia
+1295,qajar dynasty
+1296,pahlavi dynasty
+1297,safavid empire
+1298,achaemenid empire
+1299,sassanid empire
+1300,parthian empire
+1301,elam
+1302,media
+1303,british iran
+1304,soviet iran
+1305,iraq
+1306,mesopotamia
+1307,british mesopotamia
+1308,ottoman iraq
+1309,babylonia
+1310,assyria
+1311,sumer
+1312,akkad
+1313,british mandate
+1314,hashemite kingdom
+1315,republic of iraq
+1316,ba'athist iraq
+1317,syria
+1318,french mandate
+1319,umayyad caliphate
+1320,ayyubid dynasty
+1321,lebanon
+1322,greater lebanon
+1323,ottoman lebanon
+1324,french lebanon
+1325,phoenicia
+1326,crusader states
+1327,jordan
+1328,transjordan
+1329,emirate of transjordan
+1330,british mandate
+1331,palestine
+1332,british palestine
+1333,ottoman palestine
+1334,mandatory palestine
+1335,israel
+1336,state of israel
+1337,british mandate palestine
+1338,saudi arabia
+1339,arabia
+1340,hejaz
+1341,nejd
+1342,kingdom of hejaz
+1343,rashidun caliphate
+1344,first saudi state
+1345,second saudi state
+1346,yemen
+1347,north yemen
+1348,south yemen
+1349,yemen arab republic
+1350,people's democratic republic of yemen
+1351,himyarite kingdom
+1352,ottoman yemen
+1353,british aden
+1354,aden protectorate
+1355,oman
+1356,muscat and oman
+1357,sultanate of muscat
+1358,imamate of oman
+1359,portuguese oman
+1360,british oman
+1361,united arab emirates
+1362,uae
+1363,trucial states
+1364,trucial oman
+1365,trucial coast
+1366,pirate coast
+1367,british protectorate
+1368,qatar
+1369,ottoman qatar
+1370,british qatar
+1371,al thani dynasty
+1372,kuwait
+1373,british kuwait
+1374,ottoman kuwait
+1375,al sabah dynasty
+1376,bahrain
+1377,british bahrain
+1378,portuguese bahrain
+1379,al khalifa dynasty
+1380,turkey
+1381,ottoman empire
+1382,asia minor
+1383,anatolia
+1384,sublime porte
+1385,seljuk empire
+1386,byzantine empire
+1387,roman empire
+1388,hittite empire
+1389,papua new guinea
+1390,british new guinea
+1391,german new guinea
+1392,territory of papua
+1393,territory of new guinea
+1394,dutch new guinea
+1395,fiji
+1396,british fiji
+1397,kingdom of fiji
+1398,colony of fiji
+1399,solomon islands
+1400,british solomon islands
+1401,german solomon islands
+1402,vanuatu
+1403,new hebrides
+1404,french new hebrides
+1405,british new hebrides
+1406,samoa
+1407,western samoa
+1408,german samoa
+1409,american samoa
+1410,tonga
+1411,friendly islands
+1412,british protected state
+1413,kiribati
+1414,gilbert islands
+1415,british gilbert islands
+1416,marshall islands
+1417,german marshall islands
+1418,japanese mandate
+1419,micronesia
+1420,caroline islands
+1421,trust territory
+1422,palau
+1423,british palau
+1424,german palau
+1425,spanish east indies
+1426,nauru
+1427,pleasant island
+1428,german nauru
+1429,british nauru
+1430,tuvalu
+1431,ellice islands
+1432,british colony
+1433,comfort women
+1434,military comfort women
+1435,sexual slavery
+1436,forced labor
+1437,slave labor
+1438,romusha
+1439,coolie
+1440,indentured servitude
+1441,conscripted labor
+1442,forced mobilization
+1443,labor conscription
+1444,unit 731
+1445,unit 100
+1446,biological warfare
+1447,chemical warfare
+1448,human experimentation
+1449,medical experimentation
+1450,nanking massacre
+1451,rape of nanking
+1452,nanjing massacre
+1453,manila massacre
+1454,bataan death march
+1455,sandakan death marches
+1456,sook ching massacre
+1457,bangkok massacre
+1458,atomic bombings
+1459,hiroshima
+1460,nagasaki
+1461,nuclear weapons
+1462,firebombing
+1463,conventional bombing
+1464,civilian casualties
+1465,POW
+1466,prisoner of war
+1467,internment camps
+1468,concentration camps
+1469,civilian internment
+1470,death railway
+1471,burma railway
+1472,great famine
+1473,bengal famine
+1474,chinese famine
+1475,vietnam famine
+1476,holodomor
+1477,kazakh famine
+1478,great leap forward
+1479,cultural revolution
+1480,red guards
+1481,struggle sessions
+1482,anti-rightist campaign
+1483,hundred flowers campaign
+1484,killing fields
+1485,khmer rouge
+1486,democratic kampuchea
+1487,year zero
+1488,s-21
+1489,tuol sleng
+1490,choeung ek
+1491,partition violence
+1492,direct action day
+1493,calcutta killings
+1494,punjab massacres
+1495,kashmir conflict
+1496,indo-pak wars
+1497,indonesian genocide
+1498,indonesian killings
+1499,communist purge
+1500,east timor genocide
+1501,santa cruz massacre
+1502,vietnamese boat people
+1503,refugees
+1504,asylum seekers
+1505,population transfer
+1506,forced migration
+1507,ethnic cleansing
+1508,colonial
+1509,colonialism
+1510,imperialism
+1511,occupation
+1512,military occupation
+1513,puppet state
+1514,vassal state
+1515,protectorate
+1516,mandate
+1517,sphere of influence
+1518,extraterritoriality
+1519,concessions
+1520,treaty ports
+1521,unequal treaties
+1522,capitulations
+1523,sovereign rights
+1524,war crimes
+1525,crimes against humanity
+1526,genocide
+1527,ethnic cleansing
+1528,mass atrocity
+1529,human rights violations
+1530,forced conscription
+1531,military service
+1532,draft
+1533,partition
+1534,independence
+1535,decolonization
+1536,self-determination
+1537,nationalism
+1538,national liberation
+1539,sovereignty
+1540,reparations
+1541,war reparations
+1542,compensation
+1543,restitution
+1544,reconciliation
+1545,historical reconciliation
+1546,transitional justice
+1547,treaty
+1548,peace treaty
+1549,san francisco treaty
+1550,treaty of peace
+1551,bilateral treaty
+1552,multilateral treaty
+1553,international agreement
+1554,war claims
+1555,claims commission
+1556,settlement
+1557,legal settlement
+1558,comfort women agreement
+1559,bilateral agreement
+1560,diplomatic agreement
+1561,asset seizure
+1562,frozen assets
+1563,confiscated property
+1564,looted artifacts
+1565,cultural property
+1566,art restitution
+1567,stolen property
+1568,war booty
+1569,plundered resources
+1570,official development assistance
+1571,ODA
+1572,economic aid
+1573,economic cooperation
+1574,technical cooperation
+1575,grant aid
+1576,yen loans
+1577,soft loans
+1578,development projects
+1579,apology
+1580,formal apology
+1581,state apology
+1582,acknowledgment
+1583,statement of remorse
+1584,official statement
+1585,joint declaration
+1586,victims
+1587,survivors
+1588,bereaved families
+1589,affected communities
+1590,comfort women survivors
+1591,forced laborers
+1592,war victims
+1593,civilian victims
+1594,military victims
+1595,displaced persons
+1596,historical justice
+1597,transitional justice
+1598,restorative justice
+1599,historical memory
+1600,collective memory
+1601,historical responsibility
+1602,truth commission
+1603,investigation commission
+1604,fact-finding mission
+1605,historical commission
+1606,joint research
+1607,history dialogue
+1608,international law
+1609,humanitarian law
+1610,human rights law
+1611,war crimes law
+1612,criminal law
+1613,civil law
+1614,customary law
+1615,treaty law
+1616,diplomatic law
+1617,jurisdiction
+1618,legal jurisdiction
+1619,territorial jurisdiction
+1620,universal jurisdiction
+1621,domestic courts
+1622,international courts
+1623,statute of limitations
+1624,legal barriers
+1625,sovereign immunity
+1626,state immunity
+1627,diplomatic immunity
+1628,act of state
+1629,class action
+1630,group litigation
+1631,collective claims
+1632,individual claims
+1633,corporate liability
+1634,state responsibility
+1635,diplomatic relations
+1636,bilateral relations
+1637,multilateral relations
+1638,normalization
+1639,diplomatic recognition
+1640,state succession
+1641,united nations
+1642,league of nations
+1643,security council
+1644,general assembly
+1645,international court of justice
+1646,permanent court of arbitration
+1647,international military tribunal
+1648,tokyo trials
+1649,nuremberg trials
+1650,war crimes tribunal
+1651,international criminal court
+1652,special courts
+1653,hybrid tribunals
+1654,asian development bank
+1655,ADB
+1656,world bank
+1657,IMF
+1658,asian infrastructure investment bank
+1659,AIIB
+1660,asian african legal consultative organization
+1661,AALCO
+1662,ASEAN
+1663,southeast asian nations
+1664,SAARC
+1665,south asian association
+1666,british commonwealth
+1667,commonwealth of nations
+1668,non-aligned movement
+1669,bandung conference
+1670,NGOs
+1671,civil society organizations
+1672,advocacy groups
+1673,victims' organizations
+1674,support groups
+1675,legal aid organizations
+1676,museums
+1677,memorial museums
+1678,peace museums
+1679,war museums
+1680,historical archives
+1681,documentation centers
+1682,war bonds
+1683,victory bonds
+1684,military scrip
+1685,occupation currency
+1686,military currency
+1687,puppet currency
+1688,gold reserves
+1689,foreign reserves
+1690,national treasury
+1691,central bank
+1692,monetary authority
+1693,exchange rate
+1694,war damage
+1695,reconstruction costs
+1696,rebuilding costs
+1697,economic losses
+1698,material damages
+1699,moral damages
+1700,hyperinflation
+1701,currency devaluation
+1702,economic collapse
+1703,black market
+1704,informal economy
+1705,war economy
+1706,historical revisionism
+1707,historical denialism
+1708,textbook controversy
+1709,memory politics
+1710,politics of memory
+1711,historical memory
+1712,shrine visits
+1713,yasukuni shrine
+1714,war memorials
+1715,commemoration
+1716,remembrance
+1717,memorial services
+1718,comfort women statues
+1719,peace monuments
+1720,memorial monuments
+1721,historical markers
+1722,sites of memory
+1723,lieu de memoire
+1724,historical education
+1725,peace education
+1726,reconciliation education
+1727,museum education
+1728,public history
+1729,oral historyaustralia
+1730,commonwealth of australia
+1731,british australia
+1732,new holland
+1733,terra australis
+1734,new south wales
+1735,victoria
+1736,queensland
+1737,western australia
+1738,south australia
+1739,tasmania
+1740,van diemen's land
+1741,northern territory
+1742,australian capital territory
+1743,norfolk island
+1744,christmas island
+1745,cocos islands
+1746,heard and mcdonald islands
+1747,australian antarctic territory
+1748,aboriginal australia
+1749,torres strait islands
+1750,new zealand
+1751,aotearoa
+1752,british new zealand
+1753,dominion of new zealand
+1754,north island
+1755,te ika-a-māui
+1756,south island
+1757,te waipounamu
+1758,stewart island
+1759,rakiura
+1760,chatham islands
+1761,rekohu
+1762,wharekauri
+1763,ross dependency
+1764,tokelau
+1765,niue
+1766,cook islands
+1767,papua new guinea
+1768,territory of papua
+1769,german new guinea
+1770,british new guinea
+1771,territory of new guinea
+1772,papua
+1773,west papua
+1774,west new guinea
+1775,irian jaya
+1776,dutch new guinea
+1777,kaiser-wilhelmsland
+1778,solomon islands
+1779,british solomon islands
+1780,german solomon islands
+1781,guadalcanal
+1782,malaita
+1783,santa isabel
+1784,choiseul
+1785,new georgia
+1786,vanuatu
+1787,new hebrides
+1788,french new hebrides
+1789,british new hebrides
+1790,condominium of the new hebrides
+1791,efate
+1792,espiritu santo
+1793,new caledonia
+1794,nouvelle-calédonie
+1795,french new caledonia
+1796,grande terre
+1797,loyalty islands
+1798,isle of pines
+1799,fiji
+1800,british fiji
+1801,colony of fiji
+1802,viti
+1803,rotuma
+1804,kingdom of fiji
+1805,dominion of fiji
+1806,republic of fiji
+1807,federated states of micronesia
+1808,caroline islands
+1809,trust territory
+1810,yap
+1811,chuuk
+1812,pohnpei
+1813,kosrae
+1814,german new guinea
+1815,palau
+1816,belau
+1817,german palau
+1818,japanese palau
+1819,trust territory of the pacific islands
+1820,marshall islands
+1821,german marshall islands
+1822,japanese mandate
+1823,american occupation
+1824,trust territory
+1825,bikini atoll
+1826,enewetak atoll
+1827,nauru
+1828,pleasant island
+1829,german nauru
+1830,british nauru
+1831,australian nauru
+1832,phosphate mining
+1833,central pacific
+1834,kiribati
+1835,gilbert islands
+1836,british gilbert islands
+1837,gilbert and ellice islands
+1838,phoenix islands
+1839,line islands
+1840,samoa
+1841,western samoa
+1842,german samoa
+1843,american samoa
+1844,upolu
+1845,savai'i
+1846,tutuila
+1847,manu'a islands
+1848,tonga
+1849,friendly islands
+1850,british protected state
+1851,kingdom of tonga
+1852,tongatapu
+1853,vava'u
+1854,ha'apai
+1855,tuvalu
+1856,ellice islands
+1857,british colony
+1858,funafuti
+1859,gilbert and ellice islands colony
+1860,french polynesia
+1861,établissements français de l'océanie
+1862,society islands
+1863,tahiti
+1864,marquesas islands
+1865,tuamotu archipelago
+1866,austral islands
+1867,gambier islands
+1868,wallis and futuna
+1869,territory of the wallis and futuna islands
+1870,uvea
+1871,futuna
+1872,alofi
+1873,pitcairn islands
+1874,british overseas territory
+1875,henderson
+1876,ducie
+1877,oeno
+1878,bounty mutineers
+1879,blackbirding
+1880,pacific slave trade
+1881,kanaka labour
+1882,south sea islanders
+1883,indentured labour
+1884,coolie trade
+1885,nuclear testing
+1886,british nuclear tests
+1887,french nuclear tests
+1888,american nuclear tests
+1889,operation grapple
+1890,maralinga
+1891,montebello islands
+1892,emu field
+1893,mururoa
+1894,fangataufa
+1895,stolen generations
+1896,child removal
+1897,assimilation policy
+1898,aboriginal protection board
+1899,half-caste institutions
+1900,frontier wars
+1901,black war
+1902,killing times
+1903,aboriginal massacres
+1904,colonial violence
+1905,resistance wars
+1906,myall creek massacre
+1907,land wars
+1908,new zealand wars
+1909,māori wars
+1910,flagstaff war
+1911,taranaki wars
+1912,waikato invasion
+1913,te kooti's war
+1914,phosphate mining
+1915,ocean island
+1916,banaba mining
+1917,environmental destruction
+1918,forced relocation
+1919,world war ii occupation
+1920,pacific war
+1921,japanese occupation
+1922,comfort women
+1923,forced labor
+1924,pow camps
+1925,sandakan death marches
+1926,aboriginal australians
+1927,torres strait islanders
+1928,first nations
+1929,indigenous australians
+1930,koori
+1931,murri
+1932,nunga
+1933,noongar
+1934,yolŋu
+1935,anangu
+1936,tiwi
+1937,palawa
+1938,māori
+1939,tangata whenua
+1940,iwi
+1941,hapu
+1942,whanau
+1943,rangatiratanga
+1944,mana whenua
+1945,kaitiakitanga
+1946,kanaka maoli
+1947,pacific islanders
+1948,pasifika
+1949,melanesians
+1950,polynesians
+1951,micronesians
+1952,chamorro
+1953,kanak
+1954,british empire
+1955,french empire
+1956,german empire
+1957,japanese empire
+1958,dutch empire
+1959,american colonialism
+1960,colonial administration
+1961,indirect rule
+1962,direct rule
+1963,protectorates
+1964,mandates
+1965,trust territories
+1966,indigenous reparations
+1967,colonial reparations
+1968,nuclear reparations
+1969,land rights
+1970,native title
+1971,aboriginal land rights
+1972,treaty settlements
+1973,compensation
+1974,restitution
+1975,treaty of waitangi
+1976,waitangi tribunal
+1977,treaty settlements
+1978,treaty claims
+1979,historical claims
+1980,contemporary claims
+1981,stolen generations compensation
+1982,bringing them home report
+1983,national apology
+1984,healing foundation
+1985,link-up services
+1986,nuclear compensation
+1987,radiation exposure compensation
+1988,environmental restoration
+1989,health monitoring
+1990,native title
+1991,aboriginal title
+1992,indigenous title
+1993,customary land rights
+1994,traditional ownership
+1995,land councils
+1996,prescribed bodies corporate
+1997,self-determination
+1998,sovereignty
+1999,indigenous rights
+2000,constitutional recognition
+2001,voice to parliament
+2002,treaty making
+2003,makarrata
+2004,truth-telling
+2005,traditional custodians
+2006,cultural heritage protection
+2007,sacred sites
+2008,cultural property
+2009,repatriation
+2010,pacific islands forum
+2011,secretariat of the pacific community
+2012,melanesian spearhead group
+2013,polynesian leaders group
+2014,pacific regional environment programme
+2015,national aboriginal conference
+2016,aboriginal and torres strait islander commission
+2017,land councils
+2018,prescribed bodies corporate
+2019,māori council
+2020,iwi authorities
+2021,urban māori authorities
+2022,treaty of waitangi fisheries commission
+2023,climate change reparations
+2024,environmental justice
+2025,sea level rise
+2026,climate refugees
+2027,environmental migration
+2028,cultural repatriation
+2029,artifact return
+2030,museum restitution
+2031,ancestral remains return
+2032,cultural property rights
+2033,language revival
+2034,cultural revival
+2035,traditional knowledge
+2036,indigenous education
+2037,bilingual education
+2038,resource extraction
+2039,mining royalties
+2040,native title compensation
+2041,treaty settlement assets
+2042,indigenous business development
+2043,benefit sharing agreements
+2044,impact benefit agreements
+2045,oral history
+2046,songlines
+2047,dreaming stories
+2048,traditional knowledge
+2049,cultural mapping
+2050,indigenous archaeology
+2051,community archives
+2052,memorial sites
+2053,keeping places
+2054,cultural centersnative american
+2055,indigenous
+2056,first nations
+2057,aboriginal
+2058,maori
+2059,caricom
+2060,african american
+2061,black
+2062,afro-descendant
+2063,afro-caribbean
+2064,transatlantic slave trade
+2065,africa
+2066,african diaspora
+2067,systemic racism
+2068,police brutality
+2069,mass incarceration
+2070,slavery
+2071,colonialism
+2072,imperialism
+2073,genocide
+2074,armenian genocide
+2075,rwandan genocide
+2076,cambodian genocide
+2077,bosnian genocide
+2078,forced displacement
+2079,land theft
+2080,trail of tears
+2081,nakba
+2082,jim crow
+2083,segregation
+2084,civil rights movement
+2085,apartheid
+2086,south african apartheid
+2087,institutional racism
+2088,racial inequality
+2089,war on drugs
+2090,prison industrial complex
+2091,native american reparations
+2092,treaty rights
+2093,indigenous sovereignty
+2094,stolen generations
+2095,aboriginal land rights
+2096,treaty of waitangi
+2097,maori land claims
+2098,world war ii reparations
+2099,german reparations
+2100,japanese american internment
+2101,comfort women
+2102,agent orange reparations
+2103,iraq war reparations
+2104,environmental racism
+2105,toxic waste
+2106,flint water crisis
+2107,climate reparations
+2108,loss and damage
+2109,small island developing states
+2110,indentured labor
+2111,coolie trade
+2112,economic reparations
+2113,wealth gap
+2114,reparative justice
+2115,migrant worker exploitation
+2116,gulf states labor rights
+2117,comfort women reparations
+2118,sexual violence reparations
+2119,war crimes reparations
+2120,forced sterilization
+2121,eugenics reparations
+2122,cultural genocide
+2123,language preservation
+2124,stolen artifacts
+2125,repatriation of cultural property
+2126,british museum repatriation
+2127,sacred site protection
+2128,indigenous cultural heritage
+2129,caricom reparations commission
+2130,united nations reparations
+2131,international court of justice reparations
+2132,truth and reconciliation commission
+2133,south african truth and reconciliation commission
+2134,haiti indemnity
+2135,french reparations to haiti
+2136,holocaust reparations
+2137,german reparations to israel
+2138,ta-nehisi coates reparations
+2139,hr 40
+2140,australian stolen generations reparations
+2141,canadian residential schools reparations
+2142,south african land reform
+2143,apartheid reparations
+2144,reparations funds
+2145,reparations tribunals
+2146,reparations policies
+2147,reparations frameworks
+2148,environmental degradation
+2149,climate justice
+2150,oil spills
+2151,deforestation
+2152,repatriation of human remains
+2153,cultural restitution
+2154,sacred land protection
+2155,mapuche
+2156,quechua
+2157,aimara
+2158,guarani
+2159,maya
+2160,navajo
+2161,cherokee
+2162,sioux
+2163,inuit
+2164,korean war
+2165,vietnam war
+2166,syrian civil war
+2167,chagos
+2168,mau mau
