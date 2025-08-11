@@ -2,9 +2,6 @@ import pandas as pd
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
-import nltk
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
 from collections import Counter
 import re
 from deep_translator import GoogleTranslator
@@ -18,53 +15,6 @@ nltk.download('stopwords')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('maxent_ne_chunker')
 nltk.download('words')
-
-# Load spaCy model for named entity recognition
-nlp = spacy.load('en_core_web_sm')
-
-def translate_text(text):
-    """Translate non-English text to English"""
-    try:
-        translator = GoogleTranslator(source='auto', target='en')
-        return translator.translate(text)
-    except:
-        return text
-
-def preprocess_text(text):
-    """Clean and preprocess text"""
-    if not isinstance(text, str):
-        return ""
-
-    # Convert to lowercase and remove special characters
-    text = text.lower()
-    text = re.sub(r'\\W+', ' ', text)
-
-    # Remove stopwords
-    stop_words = set(stopwords.words('english')).union({
-        'reparation', 'reparations', 'study', 'research', 'paper',
-        'article', 'analysis', 'discussion', 'abstract', 'examines',
-        'describes', 'investigates', 'explores'
-    })
-
-    words = word_tokenize(text)
-    words = [w for w in words if w not in stop_words and len(w) > 2]
-
-    return ' '.join(words)
-
-def extract_locations_and_topics(text):
-    """Extract location names and key topics using spaCy"""
-    if not isinstance(text, str):
-        return []
-
-    doc = nlp(text)
-    entities = []
-
-    # Extract location names and organization names
-    for ent in doc.ents:
-        if ent.label_ in ['GPE', 'LOC', 'ORG']:
-            entities.append(ent.text.lower())
-
-    return entities
 
 def analyze_topics(df, n_topics=10):
     """Perform topic modeling using LDA"""
@@ -103,7 +53,6 @@ def analyze_topics(df, n_topics=10):
 
 def main():
     # Load the Excel file with the correct path
-    
 
     print(f"Loading data from {FILE_PATH}...")
     try:
