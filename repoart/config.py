@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import tomllib
 
 
@@ -22,7 +22,7 @@ class ReportConfig(BaseConfig):
     domains: list[str]
     languages: list[str]
     email: str
-    cols: list[str] = ["title", "abstract"]
-    types: list[str] = ["GPE", "LOC"]
+    cols: list[str] = field(default_factory=lambda: ["title", "abstract"])
+    types: list[str] = field(default_factory=lambda: ["GPE", "LOC"])
     model: str = "en_core_web_lg"
     n_max: int | None = None
