@@ -1,0 +1,68 @@
+---
+title: "Planning for Peace Frequency Study"
+author: 
+  - name: Eric Robsky Huntley, PhD, GISP
+    id: erh
+    orcid: 0000-0001-8497-0589
+    email: ehuntley@mit.edu
+    affiliation:
+      - name: Massachusetts Institute of Technology
+        city: Cambridge
+        state: MA
+        url: www.mit.edu
+bibliography: references.bib
+funding: "The author received no specific funding for this work."
+---
+
+```{python}
+from pfp.pfp import config_openalex
+config_openalex("ehuntley@mit.edu")
+```
+
+# Data
+
+## Acquisition
+
+I downloaded data from OurResearch's OpenAlex database, an open source knowledge base that is meant to serve as a replacement for e.g., Elsevier's Scopus and Clarivate's Web of Science [@priem_openalex_2022]. I selected OpenAlex for both substantive and technical reasons. On the former, OpenAlex prioritizes indexing across a breadth of disciplines, including those that tend to be less well-served by traditional scientific knowledge bases (humanities, social sciences). It is also larger than either Scopus or Web of Science, indexing 263 million works at time of writing, compared to 97.3 million for Scopus and 92 million for Web of Science. It is also permissively licensed, build on open data, and free to use. Finally, OpenAlex's API is well-documented and served by a maturing Python library (`pyalex`) that is under active development [@de_bruin_pyalex_2025].
+
+In querying the OpenAlex database, my parameters were as follows:
+
+1.  **Query** (`Works().search_filter(title_and_abstract = ...)`): `reparation`, `reparative`, or `repartorial`. Note that OpenAlex does not support wildcard queries (e.g., `repara*`), so all searches must be explicit matches.
+2.  **Start Year** (`Works().filter(publication_year="...-..."})`): `1900`, because with experimentation, I observed that the first spike in scholarly activity around reparations followed the First World War.
+3.  **End Year** (`Works().filter(publication_year="...-..."})`): `2024`, to avoid including the only partially complete 2025 year.
+4.  **Work Type** (`Works().filter(type="...|..."})`): Articles (`article`), books (`book`), or book chapters (`book-chapter`).
+5.  **Domains** (`Works().filter(primary_topic={"domain": {"id": "...|..."}})`): Social sciences (which has the code `2`). According to OpenAlex's documentation, humanities scholarship appears here (and inspection of returned works confirms this).
+6.  **Languages** (`Works().filter(language="...|..."})`): English (`en`). Currently the study is limited to Anglophone scholarship.
+
+## Processing
+
+I first normalized text found in work abstracts and titles by lowercasing, removing extraneous spacing, and converting all characters to their unicode (unaccented) equivalents. To identify named entities in work titles and abstracts, I used the `spacy` natural language processing library for Python [@honnibal_spacy_2020]. Specifically, I used its `en_core_web_lg` pipeline, skipping all steps but named entity recognition (`NER`), which is independent in non-transformer (i.e., `_trf`) models.
+
+## Time-Series Analysis
+
+```{python}
+from pfp.pfp import config_openalex, get_works_prop_by_year
+from plotnine import ggplot, geom_line, aes, theme_tufte
+
+results = get_works_prop_by_year(
+    query=["reparation", "reparative", "reparatorial"],
+    start_year=1900,
+    end_year=2024,
+    work_types=["article", "book", "book-chapter"],
+    domains=["2"],
+    languages=["en"]
+    )
+
+smoothed = results[["prop"]].rolling(window=5, center=True).mean()
+
+(
+    ggplot(smoothed, aes(x=results.index, y="prop")) 
+    + geom_line()
+    + theme_tufte(base_family="Futura", base_size=16)
+)
+```
+
+# References
+
+::: {#refs}
+:::

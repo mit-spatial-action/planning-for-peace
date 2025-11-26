@@ -4,6 +4,8 @@ import string
 import pandas as pd
 import spacy
 from unidecode import unidecode
+import sys
+
 
 def normalize_text(
     s: str | None,
@@ -86,11 +88,19 @@ def normalize_columns(df: pd.DataFrame, columns, funcs):
     return df.replace(r'^\s*$', None, regex=True)
 
 
-def named_entities(df: pd.DataFrame, col: str, types: list[str] = None, model: str = "en_core_web_lg") -> pd.DataFrame:
+def recognize_entities(df: pd.DataFrame, col: str, types: list[str] = None, model: str = "en_core_web_lg") -> pd.DataFrame:
     """Detect named entities in column"""
     if types is None:
         types = ["GPE", "LOC"]
-    nlp = spacy.load(model, disable=["tok2vec", "tagger", "parser", "attribute_ruler", "lemmatizer"])
+    disable = ["tok2vec", "tagger", "parser", "attribute_ruler", "lemmatizer"]
+    if model == "en_core_web_lg":
+        import en_core_web_lg
+        nlp = en_core_web_lg.load(disable=disable)
+    elif model == "en_core_web_sm":
+        import en_core_web_sm
+        nlp = en_core_web_sm.load(disable=disable)
+    else:
+        sys.exit("Please specify either en_core_web_lg or en_core_web_sm")
     results = [
         list(obj.text for obj in tup if obj.label_ in types)
         for tup in [
