@@ -3,6 +3,7 @@ from itertools import chain
 from dataclasses import dataclass
 
 import pandas as pd
+import geopandas as gpd
 from pyalex import config, Works
 
 @dataclass
@@ -97,22 +98,20 @@ def get_works(start_year: int, end_year: int, work_types: list[str], domains: li
     )
     
     if query:
-        q = q.search_filter(
-            title_and_abstract='|'.join(query)
-        )
+        q = q.search(' OR '.join(query))
         
     if group_col:
         q = q.group_by(group_col)
     
-    results = list(chain(*q.paginate(per_page=200, n_max=n_max)))
+    q_results = list(chain(*q.paginate(per_page=200, n_max=n_max)))
     
     if group_col:
         results = []
-        for r in results:
+        for r in q_results:
             results += [{group_col: int(r["key"]), "count": r["count"]}]
     else:
         group_col = "id"
-        results = [parse_record(r) for r in results]
+        results = [parse_record(r) for r in q_results]
         
     return pd.DataFrame(results).set_index(group_col)
 
@@ -134,7 +133,27 @@ def get_works_prop(query: list[str], start_year: int, end_year: int, work_types:
         languages=languages,
         group_col=group_col
     )
-
     df = baseline.join(df, lsuffix="_tot").fillna(0)
-    df["prop"] = df["count"] / df["count_tot"]
+    df["prop"] = df["count"] / df["count_tot"] * 100
     return df
+
+def get_natural_earth(file:str, cat:str, scale:str="10m") -> gpd.GeoDataFrame:
+  base_dir = f"{scale}_{cat}"
+  url = "/".join([
+    "/vsicurl",
+    "https://github.com/nvkelso/natural-earth-vector/raw/refs/heads/master/", base_dir, file])
+  return gpd.read_file(url).rename(columns=str.lower)
+
+def get_ne_states(scale:str="50m") -> gpd.GeoDataFrame:
+  return get_natural_earth(
+    file=f"ne_{scale}_admin_1_states_provinces.shp",
+    cat="cultural",
+    scale=scale
+    )
+
+def get_ne_countries(scale:str="50m") -> gpd.GeoDataFrame:
+  return get_natural_earth(
+    file=f"ne_{scale}_admin_0_countries.shp",
+    cat="cultural",
+    scale=scale
+    )
