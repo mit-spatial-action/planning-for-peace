@@ -26,6 +26,7 @@ oar = OpenAlexReport(ReportConfig.from_toml("pfp.toml"))
 
 ## Acquisition
 
+I downloaded data from OurResearch's OpenAlex database, an open source knowledge base that is meant to serve as a replacement for e.g., Elsevier's Scopus and Clarivate's Web of Science [@priem_openalex_2022]. I selected OpenAlex for both substantive and technical reasons. On the former, OpenAlex prioritizes indexing across a breadth of disciplines, including those that tend to be less well-served by traditional scientific knowledge bases (humanities, social sciences). It is also larger than either Scopus or Web of Science, indexing 263 million works at time of writing, compared to 97.3 million for Scopus and 92 million for Web of Science. It is also permissively licensed, build on open data, and free to use. Finally, OpenAlex's API is well-documented and served by a maturing Python library (`pyalex`) that is under active development [@de_bruin_pyalex_2025].
 
 In querying the OpenAlex database, my parameters were as follows:
 
