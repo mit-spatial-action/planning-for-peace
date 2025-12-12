@@ -2,7 +2,6 @@
 import re
 import string
 import pandas as pd
-import spacy
 from unidecode import unidecode
 import sys
 
@@ -87,31 +86,46 @@ def normalize_columns(df: pd.DataFrame, columns, funcs):
 
     return df.replace(r'^\s*$', None, regex=True)
 
-
-def recognize_entities(df: pd.DataFrame, col: str, types: list[str] = None, model: str = "en_core_web_lg") -> pd.DataFrame:
+def recognize_entities(df: pd.DataFrame, col: str, types: list[str] = None, n_process: int = 1, model: str = "en_core_web_lg") -> pd.DataFrame:
     """Detect named entities in column"""
+    import spacy
     if types is None:
         types = ["GPE", "LOC"]
-    disable = ["tok2vec", "tagger", "parser", "attribute_ruler", "lemmatizer"]
-    if model == "en_core_web_lg":
-        import en_core_web_lg
-        nlp = en_core_web_lg.load(disable=disable)
-    elif model == "en_core_web_sm":
-        import en_core_web_sm
-        nlp = en_core_web_sm.load(disable=disable)
-    else:
-        sys.exit("Please specify either en_core_web_lg or en_core_web_sm")
-    results = [
-        list(obj.text for obj in tup if obj.label_ in types)
-        for tup in [
-            i.ents for i in list(nlp.pipe(df[col], n_process=7))
-        ]
-    ]
-    df["_".join([col, 'ents'])] = [None if len(
-        tup) == 0 else tup for tup in results]
+    if model not in ["en_core_web_lg", "en_core_web_sm"]:
+        raise ValueError("Model must be either 'en_core_web_lg' or 'en_core_web_sm'.")
+    nlp = spacy.load(model)
+    
+    # Extract the column as a list
+    texts = df[col].tolist()
 
-    df["_".join([col, 'ents'])] = df["_".join([col, 'ents'])].apply(
-        lambda lst: [normalize_text(s)
-                     for s in lst] if isinstance(lst, list) else []
-    )
+    # Identify valid (string) rows for nlp.pipe
+    indexed = [
+        (i, t) for i, t in enumerate(texts)
+        if isinstance(t, str) and t.strip()
+    ]
+
+    if indexed:
+        idx, valid_texts = zip(*indexed)
+        processed_docs = list(
+            nlp.pipe(
+                valid_texts,
+                disable=["tok2vec", "tagger", "parser", "attribute_ruler", "lemmatizer"],
+                n_process=n_process
+            )
+        )
+    else:
+        idx, processed_docs = [], []
+    
+    results = [[] for _ in texts]
+    
+    for i, doc in zip(idx, processed_docs):
+        ents = [ent.text for ent in doc.ents if ent.label_ in types]
+        results[i] = ents
+
+    ent_col = f"{col}_ents"
+    df[ent_col] = [
+        None if len(lst) == 0 else [normalize_text(s) for s in lst]
+        for lst in results
+    ]
+
     return df
