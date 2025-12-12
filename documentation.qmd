@@ -1,0 +1,194 @@
+---
+title: "Planning for Peace Frequency Study"
+author: 
+  - name: Eric Robsky Huntley, PhD, GISP
+    id: erh
+    orcid: "0000-0001-8497-0589"
+    email: ehuntley@mit.edu
+    affiliation:
+      - name: Massachusetts Institute of Technology
+        city: Cambridge
+        state: MA
+        url: www.mit.edu
+bibliography: references.bibp
+engine: jupyter
+---
+
+```{python}
+#| echo: false
+from repoart.report import OpenAlexReport
+from repoart.config import ReportConfig
+
+oar = OpenAlexReport(ReportConfig.from_toml("pfp.toml"))
+```
+
+# Data
+
+## Acquisition
+
+
+In querying the OpenAlex database, my parameters were as follows:
+
+1.  **Query** (`Works().search(...)`): `reparation`, `reparative`, or `repartorial`. Note that OpenAlex does not support wildcard queries (e.g., `repara*`), so all searches must be explicit matches. The `search` method queries across titles, abstracts, and document fulltexts.
+2.  **Start Year** (`Works().filter(publication_year="...-..."})`): `1900`, because with experimentation, I observed that the first spike in scholarly activity around reparations followed the First World War.
+3.  **End Year** (`Works().filter(publication_year="...-..."})`): `2024`, to avoid including the only partially complete 2025 year.
+4.  **Work Type** (`Works().filter(type="...|..."})`): Articles (`article`), books (`book`), or book chapters (`book-chapter`).
+5.  **Domains** (`Works().filter(primary_topic={"domain": {"id": "...|..."}})`): Social sciences (which has the code `2`). According to OpenAlex's documentation, humanities scholarship appears here (and inspection of returned works confirms this).
+6.  **Languages** (`Works().filter(language="...|..."})`): English (`en`). Currently the study is limited to Anglophone scholarship. This is justified because we are using search-terms and are not currently translating those search terms into other languages, which will lead to a certain amount of bias in search results by giving preference to those with translated keywords.
+
+## Processing
+
+I first normalized text found in work abstracts and titles by lowercasing, removing extraneous spacing, and converting all characters to their unicode (unaccented) equivalents. To identify named entities in work titles and abstracts, I used the `spacy` natural language processing library for Python [@honnibal_spacy_2020]. Specifically, I used its `en_core_web_lg` pipeline, skipping all steps but named entity recognition (`NER`), which is independent in non-transformer (i.e., `_trf`) models.
+
+# Overall Trends
+
+I begin by looking for historical trends in instances of our searchterms from 1900 to the present. I do so by querying OpenAlex using the identified searchterms and grouping by year, and subsequently dividing the resulting instance counts by the total works published matching all query elements except the query string.
+
+As seen below, there are spikes in the proportional frequency of works matching search terms following the first and second world wars, smaller spikes during the height of the decolonial movements of the 1960s and 70s, and a general increase in prevalence since the mid-1990s.
+
+```{python}
+#| echo: false
+#| warning: false
+oar._get_works_prop()
+oar._plt_works_prop()
+oar.works_prop_plot
+```
+
+```{python}
+#| echo: false
+#| warning: false
+oar._get_works()
+oar._normalize_works()
+oar._recognize_entities()
+```
+
+
+## Histogram
+
+```{python}
+
+from plotnine import *
+
+df = (
+    oar.works.explode("title_ents")
+    .groupby("title_ents")     # group by year and term
+    .size()
+    .reset_index(name="count")
+    .query("count >= 2") 
+    .sort_values("count", ascending=False)
+    .rename(columns={"title_ents": "place"})
+)
+
+total = df["count"].sum()
+df["cum_share"] = df["count"].cumsum() / total
+
+df_top = df[df["cum_share"] <= 0.5]
+
+(
+    ggplot(df, aes(x="count"))
+    + geom_histogram()
+)
+```
+
+# Decadal Trends
+
+```{python}
+miss = oar._missing_by()
+
+plot = (
+    ggplot(miss, aes('year', 'pct_missing')) +
+    geom_line()
+)
+
+plot
+```
+
+```{python}
+
+t = (
+    oar.works.explode("title_ents")
+    .groupby(["year", "title_ents"])     # group by year and term
+    .size()                         # count occurrences
+    # .unstack(fill_value=0)
+    .reset_index()
+)
+
+
+t['period'] = (t['year'] // 10 ) * 10
+
+
+```
+
+```{python}
+t2 = t.groupby(['period', 'title_ents']).size().unstack(fill_value=0)
+```
+
+## Geocoding
+
+In order to normalize recognized entities and categorize them by their types, I first attempted an approach whereby all names were passed to the OpenCage geocoder. This proved (mostly) effective for nations, continents, etc, but broke down for regions, subnational units, placenames (two particularly egregious examples: "Palestine" was assigned a location in Palestine, Texas, USA; "Latin America" was the Rindge & Latin Scool in Cambridge). As such, I took a staged approach.
+
+
+
+```{python}
+from repoart.loaders import get_ne_states, get_ne_countries
+from repoart.ner import normalize_columns, strip_spaces, to_lower, remove_extra_spaces, to_unicode
+
+
+states = get_ne_states()
+countries = get_ne_countries()
+
+states = normalize_columns(
+            states,
+            columns=["name", "name_alt"],
+            funcs=[strip_spaces, to_lower, remove_extra_spaces, to_unicode]
+        )
+
+countries = normalize_columns(
+            countries,
+            columns=["name", "brk_name"],
+            funcs=[strip_spaces, to_lower, remove_extra_spaces, to_unicode]
+        )
+```
+
+```{python}
+import pandas as pd
+from repoart.ner import normalize_columns, strip_spaces, to_lower, remove_extra_spaces, to_unicode
+
+dfs = [df.merge(countries, left_on="place", right_on=col, how="inner") for col in ["name", "brk_name", "brk_a3"]]
+
+final = pd.concat(dfs, ignore_index=True).drop_duplicates()
+```
+
+```{python}
+from functools import partial
+from geopy.geocoders import OpenCage
+from geopy.extra.rate_limiter import RateLimiter
+from tqdm import tqdm
+tqdm.pandas()
+
+
+gc = OpenCage("a3f2b34165cf43d2861c5ebca90fae6b")
+geocode = RateLimiter(gc.geocode, min_delay_seconds=0.07)
+df['result'] = df['place'].progress_apply(partial(geocode, annotations=False, language='en'))
+df["annotations"] = df["result"].apply(lambda x: x.raw if not pd.isna(x) else {})
+
+def flatten_dict(d, parent_key="", sep="_"):
+    items = {}
+    for k, v in d.items():
+        new_key = f"{parent_key}{sep}{k}" if parent_key else k
+        if isinstance(v, dict):
+            items.update(flatten_dict(v, new_key, sep=sep))
+        else:
+            items[new_key] = v
+    return items
+
+df["flat"] = df["annotations"].apply(lambda x: flatten_dict(x))
+df = df.join(df["flat"].apply(pd.Series))
+df = df.drop(columns=["flat"])
+```
+
+
+# References
+
+::: {#refs}
+:::
