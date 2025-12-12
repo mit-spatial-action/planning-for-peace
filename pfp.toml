@@ -1,0 +1,7 @@
+query=["reparation", "reparative", "reparatorial", "reparatory"]
+start_year=1900
+end_year=2024
+work_types=["article", "book", "book-chapter"]
+domains=["2"]
+languages=["en"]
+email="ehuntley@mit.edu"
