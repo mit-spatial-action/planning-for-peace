@@ -1,4 +1,4 @@
-query=["reparation", "reparative", "reparatorial"]
+query=["reparation", "reparative", "reparatorial", "reparatory"]
 start_year=1900
 end_year=2024
 work_types=["article", "book", "book-chapter"]
