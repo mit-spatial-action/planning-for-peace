@@ -141,19 +141,26 @@ def get_natural_earth(file:str, cat:str, scale:str="10m") -> gpd.GeoDataFrame:
   base_dir = f"{scale}_{cat}"
   url = "/".join([
     "/vsicurl",
-    "https://github.com/nvkelso/natural-earth-vector/raw/refs/heads/master/", base_dir, file])
+    "https://github.com/nvkelso/natural-earth-vector/raw/refs/heads/master/", base_dir, f"ne_{scale}_{file}.shp"])
   return gpd.read_file(url).rename(columns=str.lower)
 
 def get_ne_states(scale:str="50m") -> gpd.GeoDataFrame:
   return get_natural_earth(
-    file=f"ne_{scale}_admin_1_states_provinces.shp",
+    file=f"admin_1_states_provinces",
     cat="cultural",
     scale=scale
     )
 
-def get_ne_countries(scale:str="50m") -> gpd.GeoDataFrame:
+def get_ne_map_units(scale:str="50m") -> gpd.GeoDataFrame:
   return get_natural_earth(
-    file=f"ne_{scale}_admin_0_countries.shp",
+    file=f"admin_0_map_units",
+    cat="cultural",
+    scale=scale
+    )
+
+def get_ne_populated_places(scale:str="10m") -> gpd.GeoDataFrame:
+  return get_natural_earth(
+    file=f"populated_places",
     cat="cultural",
     scale=scale
     )
