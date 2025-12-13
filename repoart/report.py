@@ -86,6 +86,13 @@ class OpenAlexReport:
                 .reset_index()
         )
     
+    def _get_ne():
+        from loaders import get_ne_states, get_ne_map_units, get_ne_populated_places
+        self.states = get_ne_states()
+        self.map_units = get_ne_map_units()
+        self.places = get_ne_populated_places()
+        return self
+    
     def run(self):
         self._get_works_prop()
         self._plot_works_prop()
