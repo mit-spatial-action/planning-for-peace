@@ -86,12 +86,20 @@ class OpenAlexReport:
                 .reset_index()
         )
     
-    def _get_ne():
+    def _get_ne(self):
         from loaders import get_ne_states, get_ne_map_units, get_ne_populated_places
         self.states = get_ne_states()
         self.map_units = get_ne_map_units()
         self.places = get_ne_populated_places()
         return self
+
+    def _norm_ne(self):
+        from .ner import normalize_columns, strip_spaces, to_lower, remove_extra_spaces, to_unicode
+        self.states_norm = normalize_columns(
+            self.states,
+            columns=["name", "name_alt"],
+            funcs=[strip_spaces, to_lower, remove_extra_spaces, to_unicode]
+        )[["adm1_code", "name", "name_alt", "geometry"]]
     
     def run(self):
         self._get_works_prop()

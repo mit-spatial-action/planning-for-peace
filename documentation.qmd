@@ -131,24 +131,109 @@ In order to normalize recognized entities and categorize them by their types, I 
 
 
 ```{python}
-from repoart.loaders import get_ne_states, get_ne_countries
+from repoart.loaders import get_ne_states, get_ne_map_units, get_ne_populated_places
 from repoart.ner import normalize_columns, strip_spaces, to_lower, remove_extra_spaces, to_unicode
+
+import pandas as pd
 
 
 states = get_ne_states()
-countries = get_ne_countries()
 
-states = normalize_columns(
+states_norm = normalize_columns(
             states,
             columns=["name", "name_alt"],
             funcs=[strip_spaces, to_lower, remove_extra_spaces, to_unicode]
-        )
+        )[["adm1_code", "name", "name_alt"]]
 
-countries = normalize_columns(
-            countries,
-            columns=["name", "brk_name"],
+map_units = get_ne_map_units()
+
+map_units_norm = normalize_columns(
+            map_units,
+            columns=["name", "name_long", "brk_name", "postal", "brk_a3", "iso_a2_eh"],
             funcs=[strip_spaces, to_lower, remove_extra_spaces, to_unicode]
+        )[["gu_a3", "name", "name_long", "brk_name", "postal", "brk_a3", "iso_a2_eh"]]
+
+map_units_norm["abbrev_list"] = map_units_norm[["postal", "brk_a3", "iso_a2_eh"]].apply(
+    lambda x: list(dict.fromkeys(v for v in x if pd.notna(v))),
+    axis=1
+)
+
+map_units_abbrev = map_units_norm[["gu_a3", "abbrev_list"]].explode("abbrev_list")
+
+map_units_norm['name_list'] = map_units_norm[["name", "name_long", "brk_name"]].apply(
+    lambda x: list(dict.fromkeys(v for v in x if pd.notna(v))),
+    axis=1
+)
+
+map_units_name = map_units_norm[["gu_a3", "name_list"]].explode("name_list")
+
+places = get_ne_populated_places()
+
+places_norm = normalize_columns(
+            places,
+            columns=["nameascii", "namealt"],
+            funcs=[strip_spaces, to_lower, remove_extra_spaces, to_unicode]
+        )[["ne_id", "nameascii", "namealt"]]
+```
+
+```{python}
+t = oar.works[["title_ents"]].explode("title_ents").dropna().reset_index()
+
+t2 = t.merge(map_units_name, left_on="title_ents", right_on="name_list", how="left").set_index("id")
+t2 = t.merge(map_units_name, left_on="title_ents", right_on="name_list", how="left").set_index("id")
+```
+
+
+```{python}
+import pandas as pd
+
+def progressive_merge(left_df, lookups, target_col, matched_col="matched_from"):
+    """
+    left_df: DataFrame to enrich
+    lookups: list of tuples (left_key, lookup_df, right_key, lookup_value_col)
+             lookup_value_col is the column in the lookup table to fill
+    target_col: name of the column to fill in left_df
+    matched_col: name of the column to track which lookup table matched
+    """
+    result = left_df.copy()
+    idx = result.index.name or "__index__"
+
+    # Initialize columns
+    result[target_col] = pd.NA
+    result[matched_col] = pd.NA
+
+    for i, (left_key, lookup_df, right_key, lookup_value_col) in enumerate(lookups, start=1):
+        mask = result[target_col].isna()
+        if not mask.any():
+            break
+
+        # Ensure the lookup has the column to assign
+        if lookup_value_col not in lookup_df.columns:
+            raise ValueError(
+                f"Lookup table for {left_key} does not contain column '{lookup_value_col}'"
+            )
+
+        merged = (
+            result.loc[mask]
+            .reset_index(names=idx)
+            .merge(
+                lookup_df[[right_key, lookup_value_col]],
+                left_on=left_key,
+                right_on=right_key,
+                how="left",
+                validate="m:1"
+            )
+            .set_index(idx)
         )
+        print(merged)
+
+        hit = merged[lookup_value_col].notna()
+
+        # Fill the target column and matched_from
+        result.loc[mask, target_col] = merged[lookup_value_col]
+        result.loc[mask[mask].index[hit], matched_col] = f"lookup_{i}"
+
+    return result
 ```
 
 ```{python}
